@@ -6,9 +6,9 @@ constructor(props) {
     }
 
 render() {
-    const element = (<div>Text from Element</div>)
+    const element = (<div>Text from Element created by Chandan</div>)
     return (<div className="comptext">
-    <h3>First Component</h3>
+    <h5>First Component</h5>
         {this.props.displaytext}
         {element}
     </div>)

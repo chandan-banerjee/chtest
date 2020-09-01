@@ -11,7 +11,7 @@ function App() {
         <p>
           See the magic. Edit <code>src/App.js</code> and save to reload Chandan.
         </p>
-        <FirstComponent displaytext="First Component Data"/>
+        <FirstComponent displaytext="First Component Data- from AppJS"/>
         <a
           className="App-link"
           href="https://reactjs.org"
