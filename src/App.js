@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
 
 function App() {
   return (
@@ -22,5 +23,13 @@ function App() {
     </div>
   );
 }
+
+class Test extends React.Component {
+	render() {
+		return <h1> hello world from ch </h1>;
+		}
+}
+
+ReactDOM.render(<Test />, document.getElementById('root'));
 
 export default App;
