@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ReactDOM from 'react-dom';
+import FirstComponent from './FirstComponent';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <p>
           See the magic. Edit <code>src/App.js</code> and save to reload Chandan.
         </p>
+        <FirstComponent displaytext="First Component Data"/>
         <a
           className="App-link"
           href="https://reactjs.org"
