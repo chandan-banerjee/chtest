@@ -1,7 +1,7 @@
 import React from 'react';
 import { API, graphqlOperation } from 'aws-amplify'
 // import uuid to create a unique client ID
-import uuid from 'uuid/v4'
+//import uuid from 'uuid/v4'
 
 import { listTalks as ListTalks } from './graphql/queries'
 // import the mutation
