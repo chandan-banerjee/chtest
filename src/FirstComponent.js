@@ -6,12 +6,12 @@ constructor(props) {
     }
 
 render() {
-    //const element = (<div>Text from Element created by Chandan</div>)
-    const element = (<h1 style={{ color: 'red' }}>Hello world</h1>)
+    //const element = (<div>Text from non Fn. Element created by Chandan</div>)
+    const element = (<h5 style={{ color: 'red' }}>Hello world-Text from non Fn. component created by Chandan</h5>)
     return (<div className="comptext">
-    <h1 >First Component</h1>
         {this.props.displaytext}
         {element}
+        <h3 >My First Component</h3>
     </div>)
     }
 }

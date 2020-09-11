@@ -1,0 +1,54 @@
+import React, { useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import FirstComponent from './FirstComponent';
+
+function App() {const v1 = "Hello from non ArrowHead Function Component";
+  return ( 
+    <div className="App">
+      
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <Headline />
+        <Headline2 value={v1} />
+        <p>
+          See the magic. Edit <code>src/App.js</code> and save to reload Chandan.
+        </p>
+        <FirstComponent displaytext="First Component Data- from AppJS TAG"/>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+function Headline2(props) {
+  return <h1>{props.value}</h1>;
+}
+
+
+const Headline = () => {
+  const [greeting, setGreeting] = useState(
+    'Hello from my first arrow head Function Component!'
+  );
+ 
+  return (
+    <div>
+      <h1>{greeting}</h1>
+      <input
+        type="text"
+        value={greeting}
+        onChange={event => setGreeting(event.target.value)}
+      />
+    </div>
+  );
+  };
+
+
+  export default App;
